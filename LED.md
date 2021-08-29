@@ -10,15 +10,15 @@ void setup() <br>
 void loop()  <br>
 { <br>
   digitalWrite(13,HIGH); <br>
-  delay(1000); <br>
+  delay(500); <br>
   digitalWrite(13,LOW); <br>
-  delay(1000); <br>
+  delay(500); <br>
   digitalWrite(11,HIGH); <br>
-  delay(1000); <br>
+  delay(500); <br>
   digitalWrite(11,LOW); <br>
-  delay(1000); <br>
+  delay(500); <br>
   digitalWrite(9,HIGH); <br>
-  delay(1000); <br>
+  delay(500); <br>
   digitalWrite(9,LOW); <br>
-  delay(1000); <br>
+  delay(500); <br>
 } <br>
