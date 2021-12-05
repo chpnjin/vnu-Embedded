@@ -43,3 +43,26 @@ Image('VF04.jpg',width=200)
 Image('VF05.jpg',width=200)
 ````
 
+<H2>CV2繪圖</H2>
+
+![圖片](https://user-images.githubusercontent.com/16370565/144731552-f1ddd3ca-857b-4919-8881-d13cd9e534e7.png)
+
+
+<h3>程式碼</h3>
+
+````python
+#205 openCV簡易繪圖範例
+import numpy as np
+# 建立一張 256x256 的 RGB 圖片（0黑色）
+img = np.zeros((256, 256, 3), np.uint8) #np.zeros建立0矩陣
+# 將圖片用淺灰色 (200, 200, 200) 填滿
+img.fill(200)
+# 在圖片上畫一條紫紅色的對角線，寬度為 5 px (0,0在最左上角)
+# cv2.line(影像, 開始座標, 結束座標, 顏色, 線條寬度)
+cv2.line(img, (0, 0), (255, 255), (255, 0, 255), 5)
+cv2.line(img, (255,0),(0,255),(255, 0, 255),5)
+#cv2.putText(影像, 文字, 座標, 字型, 大小, 顏色, 線條寬度, 線條種類)
+cv2.putText(img, 'Grace', (70, 230), cv2.FONT_HERSHEY_PLAIN,2, (255, 0, 0), 1, cv2.LINE_AA)
+# 顯示圖片
+cv2_imshow(img)
+````
